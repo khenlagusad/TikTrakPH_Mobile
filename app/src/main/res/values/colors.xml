@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="primary">#0038A8</color>
+    <color name="primary_dark">#0A1F44</color>
+    <color name="accent_yellow">#FCD116</color>
+    <color name="danger">#CE1126</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F5F8FF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="light_blue">#F0F4FF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#3A4A5C</color>
+    <color name="text_secondary">#8A9BB5</color>
+
+</resources>

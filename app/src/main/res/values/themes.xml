@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.TikTrakPH_Mobile"
+        parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- Brand Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/surface</item>
+
+        <item name="colorSecondary">@color/accent_yellow</item>
+        <item name="colorOnSecondary">@color/primary_dark</item>
+
+        <!-- Background and Surface -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- System Bars -->
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Default Font -->
+        <item name="android:fontFamily">@font/quicksand</item>
+
+    </style>
+
+    <!-- Main Application Theme -->
+    <style name="Theme.TikTrakPH_Mobile"
+        parent="Base.Theme.TikTrakPH_Mobile" />
+
+</resources>

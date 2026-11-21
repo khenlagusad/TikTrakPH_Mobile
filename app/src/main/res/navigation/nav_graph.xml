@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.guest.HomeFragment"
+        android:label="Home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_guestSearchFragment"
+            app:destination="@id/guestSearchFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/guestSearchFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.guest.GuestSearchFragment"
+        android:label="Guest Search">
+
+        <action
+            android:id="@+id/action_guestSearchFragment_to_searchResultsFragment"
+            app:destination="@id/searchResultsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.guest.SearchResultsFragment"
+        android:label="Search Results">
+
+        <action
+            android:id="@+id/action_searchResultsFragment_to_ticketDetailsFragment"
+            app:destination="@id/ticketDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ticketDetailsFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.guest.TicketDetailsFragment"
+        android:label="Ticket Details">
+
+        <argument
+            android:name="ticketId"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_ticketDetailsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/action_ticketDetailsFragment_to_paymentConfirmationFragment"
+            app:destination="@id/paymentConfirmationFragment" />
+
+        <action
+            android:id="@+id/action_ticketDetailsFragment_to_fileDisputeFragment"
+            app:destination="@id/fileDisputeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentConfirmationFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.tickets.PaymentConfirmationFragment"
+        android:label="Payment Confirmation">
+
+        <argument
+            android:name="ticketId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fileDisputeFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.tickets.FileDisputeFragment"
+        android:label="File Dispute">
+
+        <argument
+            android:name="ticketId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.auth.LoginFragment"
+        android:label="Login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.auth.RegisterFragment"
+        android:label="Register">
+
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.dashboard.DashboardFragment"
+        android:label="Dashboard" />
+
+    <fragment
+        android:id="@+id/ticketsFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.tickets.ManageTicketsFragment"
+        android:label="Manage Tickets" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.profile.ProfileFragment"
+        android:label="My Profile">
+
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.itismob.s01.lagusad.khenwalter.tiktrakph_mobile.profile.EditProfileFragment"
+        android:label="Edit Profile" />
+
+</navigation>
